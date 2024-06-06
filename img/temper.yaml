@@ -1,0 +1,111 @@
+layers:
+  ColemakDH:
+  - - Q
+    - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+    - {t: '''', s: '"'}
+  - - {t: A, h: LGUI}
+    - {t: R, h: LALT}
+    - {t: S, h: LCTRL}
+    - {t: T, h: LSHFT}
+    - G
+    - M
+    - {t: N, h: RSHFT}
+    - {t: E, h: RCTRL}
+    - {t: I, h: RALT}
+    - {t: O, h: RGUI}
+  - - Z
+    - X
+    - C
+    - D
+    - V
+    - K
+    - H
+    - {t: ',', s: ;}
+    - {t: ., s: ':'}
+    - {t: /, s: '?'}
+  - - {t: ESC, h: System}
+    - {t: SPACE, h: FunNav}
+    - {t: TAB, h: NumSym}
+    - {t: ENTER, h: NumSym}
+    - {t: BSPC, h: FunNav}
+    - {t: DEL, h: System}
+  NumSym:
+  - [/, '7', '8', '9', '-', '~', '&', '*', '|', '`']
+  - ['*', '4', '5', '6', '&kb PLUS', \, $, '%', ^, ':']
+  - ['0', '1', '2', '3', ., '?', '!', '@', '#', ;]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {type: held alternate}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  FunNav:
+  - [F12, F7, F8, F9, '', PG UP, HOME, UP, END, PSCRN]
+  - [F11, F4, F5, F6, '', PG DN, LEFT, DOWN, RIGHT, '']
+  - [F10, F1, F2, F3, '', Undo, Copy, Paste, Cut, Redo]
+  - - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held alternate}
+    - {t: ▽, type: trans}
+  System:
+  - [BOOT, PREV, NEXT, PP, '', SLEEP, Window Prev Monitor, Window Snap Up, Window Next Monitor, BOOT]
+  - [BRI INC, MUTE, VOL DN, VOL UP, '', AL LOCK, Window Snap Left, Window Snap Down, Window Snap Right, '']
+  - [BRI DEC, BT CLR, BT PRV, BT NXT, '', '', Shift Copy, Shift Paste, Previous Workspace, Next Workspace]
+  - - {type: held}
+    - ''
+    - ''
+    - ''
+    - ''
+    - {type: held alternate}
+combos:
+- p: [6, 7]
+  k: '{'
+  l: [ColemakDH, NumSym]
+- p: [7, 8]
+  k: '}'
+  l: [ColemakDH, NumSym]
+- p: [5, 6]
+  k: '['
+  l: [ColemakDH, NumSym]
+- p: [8, 9]
+  k: ']'
+  l: [ColemakDH, NumSym]
+- p: [16, 17]
+  k: (
+  l: [ColemakDH, NumSym]
+- p: [17, 18]
+  k: )
+  l: [ColemakDH, NumSym]
+- p: [21, 22]
+  k: '~'
+  l: [ColemakDH, NumSym]
+- p: [22, 23]
+  k: '-'
+  l: [ColemakDH, NumSym]
+- p: [1, 2]
+  k: <
+  l: [ColemakDH]
+- p: [2, 3]
+  k: '>'
+  l: [ColemakDH]
+- p: [26, 27]
+  k: _
+  l: [ColemakDH, NumSym]
+- p: [27, 28]
+  k: '='
+  l: [ColemakDH, NumSym]
+- p: [11, 12]
+  k: ←
+  l: [ColemakDH]
+- p: [12, 13]
+  k: →
+  l: [ColemakDH]
