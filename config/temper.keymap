@@ -185,7 +185,7 @@ ZMK_LAYER(ColemakDH,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi   &dot_colon    &slash_ques
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                               &lt NUMSYM ESC &hma SPACE LSHFT &hma TAB LCTRL  &hma LALT ENTER &lt FUNNAV BSPC &hma DEL LGUI
+                               &lt NUMSYM ESC &hm SPACE LSHFT &hm TAB LCTRL  &hm LALT ENTER &lt FUNNAV BSPC &hm DEL LGUI
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 

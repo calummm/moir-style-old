@@ -10,11 +10,11 @@ on:
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@1b99a076ef43d87e7ebb1929cd133e6daf8a06d9
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write # allow workflow to commit to the repo
     with:
-      install_branch: 1b99a076ef43d87e7ebb1929cd133e6daf8a06d9 # install git version from main branch, not pypi
+      install_branch: main # install git version from main branch, not pypi
       keymap_patterns: "config/*.keymap" # path to the keymaps to parse
       config_path: "img/keymap_drawer.config.yaml" # config file, ignored if it does not exist
       output_folder: "img" # path to save produced SVG and keymap YAML files
