@@ -110,16 +110,7 @@ ZMK_COMBO(right_arrow, &rarr, LM1 LM0, DEF, COMBO_TERM_FAST)
     )
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
-
-#define MAKE_HT(NAME, HOLD, TAP) \
-    ZMK_BEHAVIOR(NAME, hold_tap, \
-        flavor = "balanced"; \
-        tapping-term-ms = <280>; \
-        quick-tap-ms = <QUICK_TAP_MS>; \
-        require-prior-idle-ms = <150>; \
-        bindings = <HOLD>, <TAP>; \
-    )
-MAKE_HT(ht, &kp, &kp)
+MAKE_HRM(hma, &kp, &kp, KEYS_L KEYS_R THUMBS)  // both hand
 
 
 // tap: sticky shift | shift + tap or double-tap: caps word | hold: navigation layer
@@ -194,7 +185,7 @@ ZMK_LAYER(ColemakDH,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi   &dot_colon    &slash_ques
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                               &lt NUMSYM ESC &ht SPACE LSHFT &ht TAB LCTRL  &ht LALT ENTER &lt FUNNAV BSPC &ht DEL LGUI
+                               &lt NUMSYM ESC &hma SPACE LSHFT &hma TAB LCTRL  &hma LALT ENTER &lt FUNNAV BSPC &hma DEL LGUI
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
