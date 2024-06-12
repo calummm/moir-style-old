@@ -110,8 +110,6 @@ ZMK_COMBO(right_arrow, &rarr, LM1 LM0, DEF, COMBO_TERM_FAST)
     )
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
-MAKE_HRM(hma, &kp, &kp, KEYS_L KEYS_R THUMBS)  // both hand
-
 
 // tap: sticky shift | shift + tap or double-tap: caps word | hold: navigation layer
 #define smart_shift smart_shift_inner SYM 0
@@ -181,11 +179,11 @@ ZMK_LAYER(ColemakDH,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y        &quotes
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N          &kp E         &kp I        &kp O
+     &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T      &kp G             &kp M     &hmr RSHFT N  &hmr RCTRL E   &hmr RALT I   &hmr RGUI O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi   &dot_colon    &slash_ques
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                               &lt NUMSYM ESC &hma SPACE LSHFT &hma TAB LCTRL  &hma LALT ENTER &lt FUNNAV BSPC &hma DEL LGUI
+                                 &lt SYS ESC &lt FUNNAV SPACE &lt NUMSYM TAB &lt NUMSYM ENTER  &lt FUNNAV BSPC  &lt SYS DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
