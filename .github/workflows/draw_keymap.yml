@@ -14,7 +14,6 @@ jobs:
     permissions:
       contents: write # allow workflow to commit to the repo
     with:
-      install_branch: main # install git version from main branch, not pypi
       keymap_patterns: "config/*.keymap" # path to the keymaps to parse
       config_path: "img/keymap_drawer.config.yaml" # config file, ignored if it does not exist
       output_folder: "img" # path to save produced SVG and keymap YAML files
